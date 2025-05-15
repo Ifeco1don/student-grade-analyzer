@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Student Grade Analyzer</h1>
+  </header>
+
+  <main>
+    <div class="student-list">
+      <div class="student-list-div">
+        <h2 class="student-list-h2">Student List</h2>
+        <table class="the-head">
+          <thead>
+            <tr><th>Names</th><th>Scores</th><th class="blank">Delete</th></tr>
+          </thead>
+        </table>
+        <div class="tables">
+          <table>
+            <tbody id="student-list-body">
+              
+            </tbody>
+        </table>
+        </div>
+        
+      </div>
+      
+      <div class="add-new-student">
+        <h2>Add new student</h2>
+        <span>
+          <p>Name: </p>
+          <input id="name" type="text" name="name">
+        </span>
+        <span>
+          <p>Score: </p>
+          <input id="score" type="number" name="score">
+        </span>
+        <button id="add-student-btn">Add Student</button>
+      </div>
+    </div>
+
+    <div class="the-rest">
+      <div class="analyze-container">
+        <div class="analyze">
+          <div class="analyzed-scores"><h3>Average score</h3><div id="average">0</div></div>
+          <div class="analyzed-scores"><h3>Passed students</h3><div id="passed">0</div></div>
+          <div class="analyzed-scores"><h3>Highest score</h3><div id="highest">0</div></div>
+          <div class="analyzed-scores"><h3>Lowest score</h3><div id="lowest">0</div></div>
+        </div>
+        <button class="analyze-btn">Analyze</button>
+      </div>
+
+      <div class="analyzed-list">
+        <h2>Analyzed students list</h2>
+        <table>
+          <thead>
+            <tr><th>Name</th><th>Score</th><th>Grade</th></tr>
+          </thead>
+        </table>
+        <div class="analyzed-tables">
+          <table>
+            <tbody id="list-output">
+              
+            </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer><p>Ifeco1don © 2025 | ifeanyipaul48@gmail.com</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
